@@ -6,7 +6,11 @@ float amount;
 };
 int main(){
   SalesRecord sales[12];
-cout<<"Enter sales data for each month: ";
+  string maxmonth;
+  float maxsales;
+  string minmonth;
+  float minsales;
+cout<<"Enter sales data for each month: "<<endl;
 
 for(int i= 0;i<12;i++){
 cout<<"Month "<<i+1<<" name: ";
@@ -15,23 +19,26 @@ cout<<"Sales Amount: ";
 cin>>sales[i].amount;
 }
 for(int i=0;i<12;i++){
-  for(int j=i+1;j<12;j++){
-    if(sales[i].amount>sales[j].amount){
-       int maxsales = sales[i].amount;
-      string maxmonth = sales[i].month;
+ 
+    if(sales[i].amount>maxsales){
+       maxsales = sales[i].amount;
+       maxmonth = sales[i].month;
     }
+  
   }
 for(int i=0;i<12;i++){
-  for(int j=i+1;j<12;j++){
-    if(sales[i].amount<sales[j].amount){
-       int minsales = sales[i].amount;
-      string minmonth = sales[i].month
-    }
+  
+    if(sales[i].amount<minsales){
+        minsales = sales[i].amount;
+       minmonth = sales[i].month;
+    
   }
-cout<<"Month with maximum sales: "<<maxmonth<<" with amount "<<maxsales;
+}
+cout<<"Month with maximum sales: "<<maxmonth<<" with amount "<<maxsales<<endl;
 cout<<"Month with minimum sales: "<<minmonth<<" with amount "<<minsales;
 return 0;
 }
+
 
 
 
