@@ -6,6 +6,13 @@ float amount;
 };
 int main(){
   SalesRecord sales[12];
-cout<<"E
+cout<<"Enter sales data for each month: ";
+
 for(int i= 0;i<12;i++){
+cout<<"Month "<<i+1<<" name: ";
+cin>>sales[i].month;
+cout<<"Sales Amount: ";
+cin>>sales[i].amount;
+}
+
 
