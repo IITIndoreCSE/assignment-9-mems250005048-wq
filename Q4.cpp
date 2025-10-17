@@ -17,15 +17,24 @@ cin>>sales[i].amount;
 for(int i=0;i<12;i++){
   for(int j=i+1;j<12;j++){
     if(sales[i].amount>sales[j].amount){
-       string maxmonth = sales[i].amount;
+       int maxsales = sales[i].amount;
+      string maxmonth = sales[i].month;
     }
   }
 for(int i=0;i<12;i++){
   for(int j=i+1;j<12;j++){
     if(sales[i].amount<sales[j].amount){
-       string minmonth = sales[i].amount;
+       int minsales = sales[i].amount;
+      string minmonth = sales[i].month
     }
-  }cout<<"Month with 
+  }
+cout<<"Month with maximum sales: "<<maxmonth<<" with "<<maxsales<<" amount";
+cout<<"Month with minimum sales: "<<minmonth<<" with "<<minsales<<" amount";
+return 0;
+}
+
+
+
 
 
 
