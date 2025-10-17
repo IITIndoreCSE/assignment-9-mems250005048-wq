@@ -28,8 +28,8 @@ for(int i=0;i<12;i++){
       string minmonth = sales[i].month
     }
   }
-cout<<"Month with maximum sales: "<<maxmonth<<" with "<<maxsales<<" amount";
-cout<<"Month with minimum sales: "<<minmonth<<" with "<<minsales<<" amount";
+cout<<"Month with maximum sales: "<<maxmonth<<" with amount "<<maxsales;
+cout<<"Month with minimum sales: "<<minmonth<<" with amount "<<minsales;
 return 0;
 }
 
